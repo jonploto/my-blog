@@ -1,0 +1,206 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  .site {
+    font-family: 'DM Sans', sans-serif;
+    background: #f0f4ff;
+    min-height: 100vh;
+    color: #111;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 3rem;
+    background: #f0f4ff;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1a2a6c;
+  }
+
+  .nav-avatar {
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #b8d0ff, #dce8ff);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2.2rem;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    color: #5a7ab5;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.15s;
+  }
+
+  .nav-links a:hover { color: #1a2a6c; }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 3rem 5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  .hero-left { flex: 1; }
+
+  .hero-title {
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 400;
+    line-height: 1.05;
+    color: #0f1f5c;
+    margin-bottom: 1.4rem;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-sub {
+    font-size: 15px;
+    color: #7a9acc;
+    margin-bottom: 2.4rem;
+    font-weight: 400;
+  }
+
+  .hero-btns {
+    display: flex;
+    gap: 12px;
+  }
+
+  .btn-dark {
+    padding: 0.65rem 1.5rem;
+    background: #1a3a8c;
+    color: #eef3ff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .btn-light {
+    padding: 0.65rem 1.5rem;
+    background: transparent;
+    color: #1a3a8c;
+    border: 1px solid #a0bcee;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .hero-right {
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .card-back {
+    position: absolute;
+    width: 240px; height: 320px;
+    background: #b8cff5;
+    border-radius: 16px;
+    top: 12px; left: 14px;
+    transform: rotate(4deg);
+  }
+
+  .card-front {
+    position: relative;
+    width: 240px; height: 320px;
+    background: linear-gradient(160deg, #ddeaff 0%, #c5d8ff 50%, #e8f0ff 100%);
+    border-radius: 16px;
+    transform: rotate(-1.5deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 24px rgba(30,60,180,0.10);
+    overflow: hidden;
+  }
+
+  .card-inner {
+    text-align: center;
+  }
+
+  .card-emoji {
+    font-size: 72px;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .card-name {
+    font-family: 'Instrument Serif', serif;
+    font-size: 20px;
+    color: #3a5fa0;
+    font-style: italic;
+  }
+
+  .card-wrapper {
+    width: 270px;
+    height: 350px;
+    position: relative;
+  }
+
+  footer {
+    text-align: center;
+    padding: 3rem 2rem 2rem;
+    font-size: 12px;
+    color: #a0bcee;
+  }
+</style>
+
+<div class="site">
+  <nav>
+    <div class="nav-logo">
+      <div class="nav-avatar">🌊</div>
+      aetou
+    </div>
+    <div class="nav-links">
+      <a>Home</a>
+      <a>Articles</a>
+      <a>Projects</a>
+      <a>About</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-left">
+      <h1 class="hero-title">Hello,<br>I'm<br>aetou.</h1>
+      <p class="hero-sub">A person who enjoys wandering through ideas.</p>
+      <div class="hero-btns">
+        <button class="btn-dark">Articles →</button>
+        <button class="btn-light">Projects →</button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="card-wrapper">
+        <div class="card-back"></div>
+        <div class="card-front">
+          <div class="card-inner">
+            <span class="card-emoji">🫧</span>
+            <div class="card-name">aetou</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 aetou · made with ♡</footer>
+</div>
